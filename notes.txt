@@ -1,0 +1,51 @@
+                           Testove
+
+!! vij .Select()
+!! linq uprajni
+
+komponentno testvane
+unit test - proverqva kato dobavqm neshto kum moeto prilojenie dali sum schupil dosekashniq kod 
+
+7te principa na testvane 
+1. Testvaneto zavisi ot konteksta (daden priemer s robot za bombi i sait za himikali i molivi)
+2. Izcherpavashtoto testvane e prakticheski nevuzmojno (vokus vurhu vajnoto)
+3. Po dobre rano ot kolkoto kusno
+4. Grupirane na greshki
+5. Ednakvi testove koito se povtarqt otnovo i otnovo gubqt svoqta efektivnost
+6. Testvaneto pokazva nalichieto na defekti no ne dokazva otsustvieto im
+7. Zabluda za lispa na greshki
+
+ruchno testvane
+ne e strukturirano
+ne e povtorimo
+ne pokriva celiq kod
+ne e tolkovva lesno kolkoto trqbva da bude
+
+avtomatichno testvane:
+sistemni testove
+integracionni testove
+komponentni testove
+---------------------------------------------
+NUnit ili MSTest - iztegli po dobre purvoto
+
+triple AAA patern 
+
+Arrange(organizationna) initializira obekti, zadava stoinosti k se podavat kum testa
+
+Act(deistvashta) - izvurshva deistvie
+
+Assert(sekci za proverka)
+
+vsicko se pishe v class koito se otbelqzva s [TestFicture]
+
+vuv [Test] se pishe testa
+
+vuv [TearDown] pishem kakvo sesluchva sled vseki test
+
+sus [SetUp] kazvame kakvo da se sluchi vseki put predi vseki test
+==========================================================================================================================================================================================================================================================================================================================================================================================
+
+                   definirane na klasove adv.
+!!! vij public orivate  i kvi sa drugite dve
+!!! vij static
+
