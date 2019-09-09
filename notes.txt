@@ -44,4 +44,28 @@ vuv [TearDown] pishem kakvo sesluchva sled vseki test
 
 sus [SetUp] kazvame kakvo da se sluchi vseki put predi vseki test
 ==========================================================================================================================================================================================================================================================================================================================================================================================
+                           principi na oop
+
+nasledqvane
+super class-bashtiniq class dava svoite chlenove na drug class
+bazov class-dushteren poluchava clenove ot superclassa
+
+v c# nasledqvaneto se otblqzva s :
+
+base=kato this no sochi bazoviq class
+
+v dushterniq class se pravi
+public void Student (string name) : base(name)
+{...}
+
+virtualen metodi 
+public virtual void Eat()
+{...} pishem tova vuv bazoviq class
+vuv dushterniq class mojem da overwritnem tozi metod
+
+abstrakciq = ignorirai nesushtestvenite svoistva i funkcii i opurni vnimanie na sushtestvenite za proekta. p0maga ni da se fokusirame na tova kakvo pravi obekta a ne kak
+
+ima dva nachina za abstarkciq:
+s interface 100% abstrakciq
+s class 0%-100% abstrakciq
 
