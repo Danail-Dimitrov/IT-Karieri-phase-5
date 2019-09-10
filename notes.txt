@@ -69,3 +69,7 @@ ima dva nachina za abstarkciq:
 s interface 100% abstrakciq
 s class 0%-100% abstrakciq
 
+vdigni si abstrakciqta - izvadi obshtoto za klasovete
+
+ako slojim abstract pred classa - toi ne moje da se istnacira pravim edin class talkuv kogata nqma logika toi da se istancira 
+
