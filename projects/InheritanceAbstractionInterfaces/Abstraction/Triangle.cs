@@ -14,12 +14,13 @@ namespace Abstraction
 
         public override double GetAreal()
         {
-            return (Math.Pow(base.Size, 2) * Math.Sqrt(3)) / 4;
+            double pow = Math.Pow(Size, 2);
+            double sqrt = Math.Sqrt(3);
+            return (pow * sqrt) / 4;
         }
 
         public override string GetName()
-        {
-            
+        {         
             return "Triangle";
         }
     }

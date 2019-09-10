@@ -43,7 +43,9 @@ namespace Abstraction
             sb.AppendLine($"{GetName()}");
             sb.AppendLine($"Color: {Color}");
             sb.AppendLine($"Size: {Size}");
-            sb.AppendLine($"Area: {GetAreal()}");
+            sb.Append("Area:");
+            double d = GetAreal();
+            sb.AppendFormat("{0:f2}", d);
             return sb.ToString();
         }
     }

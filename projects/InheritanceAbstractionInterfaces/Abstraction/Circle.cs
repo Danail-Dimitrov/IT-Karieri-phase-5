@@ -14,7 +14,7 @@ namespace Abstraction
 
         public override double GetAreal()
         {
-            return 2 * Math.PI * base.Size;
+            return Math.PI * base.Size * base.Size;
         }
 
         public override string GetName()
