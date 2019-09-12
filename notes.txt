@@ -73,3 +73,59 @@ vdigni si abstrakciqta - izvadi obshtoto za klasovete
 
 ako slojim abstract pred classa - toi ne moje da se istnacira pravim edin class talkuv kogata nqma logika toi da se istancira 
 
+
+
+!>! sus alt left kilck drag and drop pishes na nqkolko reda
+=============================================================================================================================================================================================
+                       polimorfizum
+
+!!!!!!! vij ostanalite principi na oop
+
+mnogo formi
+primer:
+Object someClass = new SomeClass();
+SomeClass someClass2 = new SomeClass();
+
+public class Person : Mammal, Animal{}
+Animal person1 = new Person();
+Mammal person2 = new Person();
+Person person3 = new Person();
+
+Animal, Mammal i Person ot lqvo sa referenti tipove
+a Person ot dqsno obekten.
+
+type checking
+if(someClass is Someclass0 - ne e dobra praktika
+
+tva vida polimorfizum
+ediniq k e dinamichen e tozi otgore
+statichiq e overloada na metodi
+
+Object someClass = new SomeClass();
+tuk se polzva funkcialnostta na Object no ako nqkoi ot metodite mu e overritnat v SomeClass shte se izpulni po nachina opisan v SomeClass
+
+tova v lqvo opredelq kakvo se izpulnqva ot dqsno kak
+
+ako edin metod e overridenat v naslednika shte se izpulni overrida ako e samo nasleden se izpulnqava kato v bazovia
+----------------------------------------------------------
+                  prezarejdane na moetodi
+overload - enakvo ime razlichni dani k priema
+
+prezarejdane overload - zapisvame sushtiq metod kato v bazovia class v dushterniq i pravim oshte edin overload na tezi v bazovia 
+
+overriding - virtual metodi pi nasledqvane / ToString overrride tva sa primeri 
+
+naslednici ne mogat da promenqt access modifyerte na metodite
+
+private i static metodi ne mogat da pudat overridnati
+
+preazpisaniq metod ne mogat da hvurlqt po golqm exception ot bazoviq
+
+-----------------------------------------------------------
+    abstraktni classove i polimorfizum
+
+
+sealed - modefikator za zabrana nasledqvane ako tq se polzva za metod vmesto class toi ne moje da se overridne
+
+
+
