@@ -126,6 +126,79 @@ preazpisaniq metod ne mogat da hvurlqt po golqm exception ot bazoviq
 
 
 sealed - modefikator za zabrana nasledqvane ako tq se polzva za metod vmesto class toi ne moje da se overridne
+--------------------------------------------------------------
+			design patern
+
+!!!vij kakvo se HashSet i SortedSet
 
 
+Gotovi resheniq na trivialni problemi
 
+yield return vrushta edin element - okazva che metoda v k se namira e iterator
+
+paras - pishe se pri parametrite priemani ot mentod priema neopredelen broi elementi moje da ima samo edno params v metod i vinagi stoi naktaq
+----------------------------------------------------------------
+!!! reflexion
+
+==============================================================================================================================================================================
+			delegati
+
+publisher -> tool -> resiver
+subitiqta signalizirat za poqva na deistvieto
+
+obekta suzdavasht subitie ne e nujno da znae za obekta obrabotvasht subitieto 
+
+delegatite sa specialen klas koito e okazatel kum funkciq, lepiloto/truboprovot mejdu 
+
+obrabotchik na subitieto - otgovarq za poluchavane i obrabotka na dannite ot delegata
+
+normalno poluchavame 2 parametura izprashtach i danni na subitieto (EventArgs)
+
+EventArgs otgovarq za enkapsulaciqta na dannite na subitieto
+
+delegatite sudurjat referenciq kum metod 
+
+delegata trqbva da ima sushtata signatura (bez imeto) kato metoda
+
+//example start
+public delegate int[] Name(int[] a, int b); - defnirane na delegat
+main 
+{
+	Name name =  Method;
+	name += SecondMethod;
+	Console.WriteLine(name);
+	//result 25otg
+
+	name -= SecondMethod;
+	Console.WriteLine(name);
+	//result 25
+	
+	name(5, 6);
+}
+
+public int Method(int[] a, int b) { int[] }
+public int SecondMethod(int[] a, int b) { int[] }
+
+!! Enumeraciq
+!! keyword event
+!! delegati kato cqlo
+
+ako returnvat int metodite shte se overridnat moje da rabotim s masiv kakto e promenen primera
+
+ako v gorniq primer napravim
+public delegate int Name(int a, int b);
+to trqbva metodite da priemat tezi argumenti
+
+mojem da prisvoim labda izrazi kum delegat 
+
+Name name = x => Console.WriteLine();
+Name name = (x, y) => Console.WriteLie(x, y);
+
+ako delegata e s return tpy 
+Name name = (x, y) => x + y;
+
+ot delegat ne mojesh da iztriesh anonimna funkciq
+
+vij obserer patern
+
+moje da podavame delegat kato parametur na metodi
